@@ -1,0 +1,95 @@
+// My code here
+$green: #071A24
+$green-dark: #04141C
+// #kt_aside_menu_wrapper
+  // margin: 0 !important
+
+.as_menu
+  padding: 0 12px
+
+  .setting
+    margin-left: 14px
+    margin-top: 20px
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 15px
+    opacity: 0.2
+
+  .menu-item
+    margin-bottom: 16px
+    border-radius: 6px
+
+    &:last-child
+      margin-bottom: 0 !important
+
+    &.menu-accordion
+      &.show:not(.hiding), &.hover:not(.hiding)
+        .menu-arrow-icon
+          transform: rotate(90deg)
+
+      &.show, &.active, &.hover
+        background-color: $green
+
+        .menu-link
+          background-color: $green !important
+
+          svg path, svg circle, svg ellipse
+            stroke: white !important
+
+      .menu-sub
+        padding-bottom: 6px
+
+        .menu-item
+          margin: 0
+
+          .menu-link
+            border-radius: 0
+            padding-left: 40px !important
+
+            .menu-title
+              color: #A3A5AF !important
+
+            &:hover
+              background-color: rgba(255, 255, 255, 0.12) !important
+
+            &.active
+              background-color: rgba(51, 51, 51, 0.16) !important
+
+              .menu-title
+                color: white !important
+
+    .menu-link
+      border-radius: 6px
+      line-height: 16.41px
+      height: 44px
+      padding: 0 14px !important
+
+      .menu-title
+        color: white !important
+
+        .index
+          margin-right: 10px
+
+      .menu-arrow-icon
+        transition: .2s all
+
+      &:hover
+        background-color: rgba(255, 255, 255, 0.12) !important
+
+        .menu-arrow-icon svg path
+          // stroke: #7D867D !important
+          stroke: white !important
+
+      &.active
+        background-color: $green !important
+
+        svg path, svg circle, svg ellipse
+          transition: 0.3s ease all
+          stroke: white !important
+
+        svg .circle, svg .ellipse
+          stroke: white !important
+
+  .menu-arrow
+    font-size: 50px !important

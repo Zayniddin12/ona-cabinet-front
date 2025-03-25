@@ -1,0 +1,40 @@
+//
+// Vendors customization
+//
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// Initialize
+@import "init";
+
+// Plugins
+@import "./core/vendors/plugins/plugins";
+
+@import "v-calendar/dist/style.css";
+
+.se-dropdown {
+  border-width: 0 !important;
+
+  .el-dropdown-menu__item {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #1c1f20 !important;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .el-dropdown-menu__item.delete {
+    color: #ff4c4c !important;
+  }
+}
+
+.se-dropdown-popper .el-dropdown__list {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.el-select-dropdown__item {
+  text-align: start !important;
+}

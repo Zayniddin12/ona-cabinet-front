@@ -1,0 +1,28 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - sudo rsync -rult --delete-after --exclude=.git/ --exclude=.gitlab-ci.yml --exclude=.env --exclude=node_modules/ $CI_PROJECT_DIR/ /var/www/devona/panel.onafoundation.uz/ona-cabinet-front
+    - cd /var/www/devona/panel.onafoundation.uz/ona-cabinet-front
+    - yarn
+    - yarn build
+  tags:
+    - 77uz
+  only:
+    - master
+
+
+deploy_to_dev:
+  stage: deploy
+  script:
+  - sudo rsync -rult --delete-after --exclude=.git/ --exclude=.gitlab-ci.yml --exclude=.env --exclude=node_modules/ $CI_PROJECT_DIR/ /var/www/web/ona-dev.uicgroup.tech
+  - cd /var/www/web/ona-dev.uicgroup.tech
+  - sudo chown -R gitlab-runner:gitlab-runner /var/www/web/ona-dev.uicgroup.tech
+  - yarn 
+  - yarn build
+  tags:
+    - main
+  only:
+    - master

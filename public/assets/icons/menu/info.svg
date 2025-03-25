@@ -1,0 +1,11 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10.0003" cy="10" r="8.33333" stroke="#6A767C" stroke-width="1.5"/>
+    <path d="M10 14.1667V9.16669" stroke="#6A767C" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="0.833333" cy="0.833333" rx="0.833333" ry="0.833333" transform="matrix(1 0 0 -1 9.16699 7.5)"
+             fill="#6A767C"/>
+    <defs>
+        <clipPath id="clip0_637_16910">
+            <rect width="20" height="20" fill="#6A767C"/>
+        </clipPath>
+    </defs>
+</svg>

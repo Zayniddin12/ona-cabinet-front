@@ -1,0 +1,126 @@
+//
+// Theme style
+//
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// Reset input styles
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+  -webkit-text-fill-color: #383838;
+  -webkit-box-shadow: 0 0 0px 40rem #f3f6f9 inset;
+}
+input:-webkit-autofill:focus-within {
+  -webkit-text-fill-color: #383838;
+  -webkit-box-shadow: 0 0 0px 40rem #fff inset;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// Initialize
+@import "init";
+
+// Components
+@import "./core/components/components";
+@import "components/components";
+
+// Layout
+@import "./core/layout/base";
+@import "layout/layout";
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+//test
+.bg-red{
+  background-color: red ;
+}
+//Modal
+.el-dialog {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  &__body {
+    padding: 20px !important;
+  }
+}
+body.el-popup-parent--hidden {
+  width: 100% !important;
+}
+
+//Form
+@import "form";
+
+@import "transitions";
+@import "global";
+@import "_fonts.css";
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #353d35;
+}
+
+.desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7d867d;
+}
+
+.leading-130 {
+  line-height: 130%;
+}
+
+.leading-140 {
+  line-height: 140%;
+}
+
+.leading-100 {
+  line-height: 100%;
+}
+
+button {
+  transition: all 200ms;
+}
+
+.hover-opacity:hover {
+  opacity: 80%;
+}
+
+.hover-blue:hover {
+  color: #3e97ff !important;
+}
+
+.transition-200 {
+  transition: all 200ms ease-in-out;
+}
